@@ -1,0 +1,8 @@
+###
+POST http://localhost:8080/videos/c4ac758a-c39a-4733-a5ba-8f3170adac76/transcription
+Content-Type: application/json
+
+{
+  "prompt": "musica katarkuri, melhor do mundo"
+}
+
