@@ -27,12 +27,12 @@ export function App() {
     <main className="flex-1 p-6 flex gap-6">
       <div className="flex flex-col flex-1">
         <div className="grid grid-rows-2 gap-4 flex-1">
-          <Textarea  placeholder="Inclua o prompt a IA..." 
+          <Textarea  placeholder="Inclua o prompt para procurar uma musica" 
             className="resize-none p-4 leading-relaxed"
           />
           <Textarea 
             className="resize-none p-4 leading-relaxed"
-            placeholder="Resultado gerado pela IA..."
+            placeholder="Letra da musica"
             readOnly
           />
         </div>
@@ -58,7 +58,7 @@ export function App() {
             </Label>
             <Textarea id="transcription_prompt" 
               className="min-h-20 leading-relaxed"
-              placeholder="Inclua palavras-chave mencionadas no video separadas por por virgula(,)"
+              placeholder="palavras chaves"
             />
           </div>
           <Button className="w-full" type="submit">
@@ -77,7 +77,7 @@ export function App() {
                   <SelectValue placeholder="Selecione um promp..."/>
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="description">Descrição do Youtube</SelectItem>
+                  <SelectItem value="description">Musicas da Juh</SelectItem>
                   <SelectItem value="title">Titulo do Youtube</SelectItem>
                 </SelectContent>
               </Select>
